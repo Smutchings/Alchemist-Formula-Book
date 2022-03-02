@@ -11,6 +11,9 @@
 		22C41BB627CFBB8500AAAF69 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C41BB527CFBB8500AAAF69 /* ContentView.swift */; };
 		22C41BB827CFBB8600AAAF69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22C41BB727CFBB8600AAAF69 /* Assets.xcassets */; };
 		22C41BBB27CFBB8600AAAF69 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22C41BBA27CFBB8600AAAF69 /* Preview Assets.xcassets */; };
+		22C41BC227CFBB9200AAAF69 /* convertcsv.json in Resources */ = {isa = PBXBuildFile; fileRef = 22C41BC127CFBB9200AAAF69 /* convertcsv.json */; };
+		22C41BC727CFBED000AAAF69 /* JSONEncodeDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C41BC627CFBED000AAAF69 /* JSONEncodeDecode.swift */; };
+		22C41BCA27CFCEE600AAAF69 /* bombs.json in Resources */ = {isa = PBXBuildFile; fileRef = 22C41BC327CFBB9800AAAF69 /* bombs.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		22C41BB527CFBB8500AAAF69 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		22C41BB727CFBB8600AAAF69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22C41BBA27CFBB8600AAAF69 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		22C41BC127CFBB9200AAAF69 /* convertcsv.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = convertcsv.json; path = ../../../../../Downloads/convertcsv.json; sourceTree = "<group>"; };
+		22C41BC327CFBB9800AAAF69 /* bombs.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = bombs.json; path = "/Users/sam/Documents/git/Alchemist Formula Book/Alchemist Formula Book/bombs.json"; sourceTree = "<absolute>"; };
+		22C41BC627CFBED000AAAF69 /* JSONEncodeDecode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONEncodeDecode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,8 @@
 				22C41BB327CFBB8500AAAF69 /* Alchemist_Formula_BookApp.swift */,
 				22C41BB527CFBB8500AAAF69 /* ContentView.swift */,
 				22C41BB727CFBB8600AAAF69 /* Assets.xcassets */,
+				22C41BC327CFBB9800AAAF69 /* bombs.json */,
+				22C41BC627CFBED000AAAF69 /* JSONEncodeDecode.swift */,
 				22C41BB927CFBB8600AAAF69 /* Preview Content */,
 			);
 			path = "Alchemist Formula Book";
@@ -62,6 +70,7 @@
 		22C41BB927CFBB8600AAAF69 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				22C41BC127CFBB9200AAAF69 /* convertcsv.json */,
 				22C41BBA27CFBB8600AAAF69 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -126,7 +135,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				22C41BBB27CFBB8600AAAF69 /* Preview Assets.xcassets in Resources */,
+				22C41BCA27CFCEE600AAAF69 /* bombs.json in Resources */,
 				22C41BB827CFBB8600AAAF69 /* Assets.xcassets in Resources */,
+				22C41BC227CFBB9200AAAF69 /* convertcsv.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +150,7 @@
 			files = (
 				22C41BB627CFBB8500AAAF69 /* ContentView.swift in Sources */,
 				22C41BB427CFBB8500AAAF69 /* Alchemist_Formula_BookApp.swift in Sources */,
+				22C41BC727CFBED000AAAF69 /* JSONEncodeDecode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

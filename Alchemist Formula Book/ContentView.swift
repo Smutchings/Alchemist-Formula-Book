@@ -8,14 +8,41 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        Text("Hello, world!")
-            .padding()
+  
+  struct Bomb: Decodable {
+    let Name: String
+    let Source: String
+    let Rarity: String
+    let Traits: String
+    let Category: String
+    let Subcategory: String
+    let Level: Int
+    let Price: String
+    let Bulk: String
+    let Spoilers: String?
+  }
+  
+  let bombs: [Bomb] = Bundle.main.decode([Bomb].self, from: "bombs.json")
+  
+  var body: some View {
+    
+    List {
+        ForEach(bombs, id: \.self.Name) { bomb in
+          HStack {
+            Text("\(bomb.Name)")
+              .padding()
+            Spacer()
+            Text("\(bomb.Level)")
+              .padding()
+          }
+      }
     }
+  }
 }
 
+
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+  static var previews: some View {
+    ContentView()
+  }
 }
